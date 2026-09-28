@@ -1,0 +1,124 @@
+{
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "search": "Tìm kiếm",
+    "filter": "Lọc",
+    "sort": "Sắp xếp",
+    "viewAll": "Xem tất cả",
+    "learnMore": "Tìm hiểu thêm",
+    "getStarted": "Bắt đầu",
+    "joinNow": "Tham gia ngay",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "submit": "Gửi",
+    "success": "Thành công"
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Về Tập Đoàn",
+    "sectors": "Lĩnh Vực Kinh Doanh",
+    "ir": "Quan Hệ Cổ Đông",
+    "ecosystem": "Hệ Sinh Thái Cộng Đồng Kết Nối Đầu Tư",
+    "campaigns": "Các Vòng Gọi Vốn",
+    "ventures": "Dự Án Startup",
+    "mechanisms": "Cơ Chế Phân Bổ",
+    "caseStudies": "Câu Chuyện Thành Công"
+  },
+    "ecosystem": {
+      "hero": {
+        "badge": "Hệ Sinh Thái Cộng Đồng Kết Nối Đầu Tư • Thành Lập 2005",
+        "title": "Hệ Sinh Thái Cộng Đồng",
+        "subtitle": "Nơi Startup, Nhà đầu tư, Mentor và Đối tác hội tụ để xây dựng tương lai cùng nhau",
+        "cta1": "Tham gia cộng đồng",
+        "cta2": "Khám phá quy trình",
+        "subtitle2": "Kết Nối Đầu Tư - Tạo Giá Trị Bền Vững"
+      },
+    "stats": {
+      "projects": "Dự án cộng đồng",
+      "capital": "Vốn cộng đồng",
+      "investors": "Thành viên",
+      "returns": "Tỷ lệ thành công"
+    },
+    "roles": {
+      "title": "4 trụ cột của cộng đồng kết nối đầu tư",
+      "subtitle": "Mỗi vai trò đóng góp giá trị riêng, cùng tạo nên sức mạnh tập thể",
+      "investor": {
+        "title": "Nhà Đầu Tư",
+        "desc": "Tìm kiếm cơ hội đầu tư chất lượng, được bảo vệ rủi ro bằng thẩm định chuẩn quốc tế",
+        "benefits": ["Quyền truy cập dự án độc quyền", "Bảo vệ quyền lợi đầu tư", "Mạng lưới đồng đầu tư uy tín"]
+      },
+      "startup": {
+        "title": "Startup / Doanh Nghiệp",
+        "desc": "Gọi vốn từ cộng đồng nhà đầu tư đã xác thực, nhận mentor từ chuyên gia hàng đầu",
+        "benefits": ["Tiếp cận vốn nhanh chóng", "Mentoring chiến lược", "Kết nối thị trường & đối tác"]
+      },
+      "mentor": {
+        "title": "Mentor / Chuyên Gia",
+        "desc": "Chia sẻ kinh nghiệm, hướng dẫn startup, nhận phần thưởng từ cộng đồng",
+        "benefits": ["Tác động xã hội thực tế", "Thu nhập từ chia sẻ kiến thức", "Mở rộng uy tín cá nhân"]
+      },
+      "partner": {
+        "title": "Đối Tác Hệ Sinh Thái",
+        "desc": "Cổ phần hóa dịch vụ, tham gia quản trị rủi ro, cùng phát triển bền vững",
+        "benefits": ["Cơ hội kinh doanh mới", "Chia sẻ rủi ro & lợi ích", "Xây dựng thương hiệu mạnh"]
+      }
+    },
+    "flow": {
+      "title": "Quy trình kết nối 5 bước",
+      "subtitle": "Từ người lạ đến đối tác chiến lược",
+      "step1": { "title": "Đăng ký & Xác thực", "desc": "Tạo hồ sơ, KYC, xác thực danh tính" },
+      "step2": { "title": "Vào cộng đồng", "desc": "Tham gia nhóm phù hợp, tìm kiếm đối tác" },
+      "step3": { "title": "Ghép nối thông minh", "desc": "AI matchmaking dựa trên nhu cầu & khả năng" },
+      "step4": { "title": "Thẩm định cộng đồng", "desc": "Chuyên gia & thành viên đánh giá cùng nhau" },
+      "step5": { "title": "Đồng hành bền vững", "desc": "Hỗ trợ tài chính, chiến lược, mở rộng thị trường" }
+    },
+    "form": {
+      "role": "Vai trò tham gia",
+      "fullName": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "company": "Công ty / Tổ chức",
+      "agreeTerms": "Tôi đồng ý với Điều khoản sử dụng và Chính sách bảo mật",
+      "success": {
+        "title": "Chào mừng bạn đến cộng đồng!",
+        "desc": "Chúng tôi sẽ liên hệ trong 24h để hướng dẫn quy trình onboard.",
+        "newRegistration": "Đăng ký thành viên mới"
+      }
+    }
+  },
+  "campaigns": {
+    "title": "Các Vòng Gọi Vốn Cộng Đồng",
+    "subtitle": "Tham gia đầu tư cùng cộng đồng, chia sẻ rủi ro - chia sẻ lợi ích",
+    "filter": { "sector": "Lĩnh vực", "status": "Trạng thái", "all": "Tất cả" },
+    "status": { "active": "Đang mở", "upcoming": "Sắp mở", "closed": "Đã đóng" },
+    "matchingPool": "Quỹ đối ứng cộng đồng",
+    "projects": "dự án",
+    "endDate": "Kết thúc"
+  },
+  "ventures": {
+    "title": "Dự Án Của Cộng Đồng",
+    "subtitle": "Khám phá startup tiềm năng đang tìm kiếm đối tác cùng phát triển",
+    "filter": { "sector": "Lĩnh vực", "stage": "Giai đoạn", "all": "Tất cả" },
+    "stage": { "seed": "Seed", "seriesA": "Series A", "seriesB": "Series B", "growth": "Growth" },
+    "fundingGoal": "Mục tiêu gọi vốn",
+    "fundingRaised": "Đã cam kết",
+    "investors": "nhà đầu tư"
+  },
+  "mechanisms": {
+    "title": "Cơ Chế Kết Nối & Phân Bổ",
+    "subtitle": "Công cụ minh bạch, công bằng cho cộng đồng",
+    "difficulty": { "beginner": "Cơ bản", "intermediate": "Trung cấp", "advanced": "Nâng cao" }
+  },
+  "caseStudies": {
+    "title": "Câu Chuyện Cộng Đồng",
+    "subtitle": "Hành trình cùng nhau từ ý tưởng đến thành công",
+    "readMore": "Đọc hành trình"
+  },
+  "sectors": {
+    "realestate": "Bất Động Sản & Đô Thị",
+    "energy": "Năng Lượng Xanh",
+    "finance": "Tài Chính & Quỹ",
+    "logistics": "Logistics & Cảng Biển"
+  }
+}

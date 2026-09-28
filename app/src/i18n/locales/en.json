@@ -1,0 +1,124 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "joinNow": "Join now",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "success": "Success"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "sectors": "Business Sectors",
+    "ir": "Investor Relations",
+    "ecosystem": "Investment Community Ecosystem",
+    "campaigns": "Funding Rounds",
+    "ventures": "Community Projects",
+    "mechanisms": "Funding Mechanisms",
+    "caseStudies": "Community Stories"
+  },
+  "ecosystem": {
+      "hero": {
+        "badge": "Investment Community Ecosystem • Established 2005",
+        "title": "Community Ecosystem",
+        "subtitle": "Where Startups, Investors, Mentors and Partners unite to build the future together",
+        "cta1": "Join Community",
+        "cta2": "Explore Process",
+        "subtitle2": "Connecting Investment - Creating Sustainable Value"
+      },
+    "stats": {
+      "projects": "Community Projects",
+      "capital": "Community Capital",
+      "investors": "Members",
+      "returns": "Success Rate"
+    },
+    "roles": {
+      "title": "4 Pillars of the Investment Community",
+      "subtitle": "Each role contributes unique value, creating collective strength",
+      "investor": {
+        "title": "Investors",
+        "desc": "Find quality investment opportunities, protected by international-standard due diligence",
+        "benefits": ["Exclusive project access", "Investment protection", "Trusted co-investor network"]
+      },
+      "startup": {
+        "title": "Startups",
+        "desc": "Raise capital from verified investors, receive mentoring from top experts",
+        "benefits": ["Fast capital access", "Strategic mentoring", "Market & partner connections"]
+      },
+      "mentor": {
+        "title": "Mentors / Experts",
+        "desc": "Share experience, guide startups, earn rewards from community",
+        "benefits": ["Real social impact", "Income from knowledge sharing", "Personal brand expansion"]
+      },
+      "partner": {
+        "title": "Ecosystem Partners",
+        "desc": "Equitize services, participate in risk management, grow sustainably together",
+        "benefits": ["New business opportunities", "Shared risk & reward", "Strong brand building"]
+      }
+    },
+    "flow": {
+      "title": "5-Step Connection Process",
+      "subtitle": "From strangers to strategic partners",
+      "step1": { "title": "Register & Verify", "desc": "Create profile, KYC, verify identity" },
+      "step2": { "title": "Join Community", "desc": "Join relevant groups, find partners" },
+      "step3": { "title": "Smart Matching", "desc": "AI matchmaking based on needs & capabilities" },
+      "step4": { "title": "Community Due Diligence", "desc": "Experts & members evaluate together" },
+      "step5": { "title": "Sustainable Partnership", "desc": "Financial, strategic, market expansion support" }
+    },
+    "form": {
+      "role": "Your Role",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company / Organization",
+      "agreeTerms": "I agree to Terms of Service and Privacy Policy",
+      "success": {
+        "title": "Welcome to the Community!",
+        "desc": "We'll contact you within 24h to guide the onboarding process.",
+        "newRegistration": "New Member Registration"
+      }
+    }
+  },
+  "campaigns": {
+    "title": "Community Funding Rounds",
+    "subtitle": "Invest together with the community, share risk - share rewards",
+    "filter": { "sector": "Sector", "status": "Status", "all": "All" },
+    "status": { "active": "Active", "upcoming": "Upcoming", "closed": "Closed" },
+    "matchingPool": "Community Matching Pool",
+    "projects": "projects",
+    "endDate": "Ends"
+  },
+  "ventures": {
+    "title": "Community Projects",
+    "subtitle": "Discover potential startups seeking partners to grow together",
+    "filter": { "sector": "Sector", "stage": "Stage", "all": "All" },
+    "stage": { "seed": "Seed", "seriesA": "Series A", "seriesB": "Series B", "growth": "Growth" },
+    "fundingGoal": "Funding Goal",
+    "fundingRaised": "Committed",
+    "investors": "investors"
+  },
+  "mechanisms": {
+    "title": "Connection & Allocation Mechanisms",
+    "subtitle": "Transparent, fair tools for the community",
+    "difficulty": { "beginner": "Beginner", "intermediate": "Intermediate", "advanced": "Advanced" }
+  },
+  "caseStudies": {
+    "title": "Community Stories",
+    "subtitle": "Journeys from idea to success together",
+    "readMore": "Read Journey"
+  },
+  "sectors": {
+    "realestate": "Real Estate & Urban",
+    "energy": "Green Energy",
+    "finance": "Finance & Funds",
+    "logistics": "Logistics & Ports"
+  }
+}

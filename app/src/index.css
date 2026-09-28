@@ -1,0 +1,62 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import "tailwindcss";
+
+:root {
+  --primary:              #0a192f;
+  --primary-container:    #0d1c32;
+  --on-primary:           #ffffff;
+  --on-primary-container: #76849f;
+  --secondary:            #725b38;
+  --secondary-container:  #fedeb2;
+  --secondary-fixed:      #fedeb2;
+  --on-secondary:         #ffffff;
+  --on-secondary-container: #78603e;
+  --on-secondary-fixed:   #281800;
+  --surface:              #f8f9ff;
+  --surface-container:    #e6eeff;
+  --surface-container-low:    #eff4ff;
+  --surface-container-high:   #dde9ff;
+  --surface-container-lowest: #ffffff;
+  --surface-variant:      #d5e3fd;
+  --on-surface:           #0d1c2f;
+  --on-surface-variant:   #44474d;
+  --inverse-surface:      #233144;
+  --outline:              #75777e;
+  --outline-variant:      #c5c6cd;
+  --max-w:    1440px;
+  --transition: all 0.3s ease;
+  --shadow-sm:  0 4px 12px -2px rgba(10,25,47,.06);
+  --shadow-md:  0 8px 24px -4px rgba(10,25,47,.10);
+  --shadow-lg:  0 16px 36px -8px rgba(10,25,47,.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--surface);color:var(--on-surface);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{display:none}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.headline{font-family:'Playfair Display',serif}
+.metric-num{font-family:'Playfair Display',serif;font-weight:700}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 4rem}
+@media(max-width:1024px){.container{padding:0 2rem}}
+@media(max-width:640px){.container{padding:0 1.25rem}}
+.display-lg{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:600;line-height:1.1;letter-spacing:-0.02em}
+.headline-lg{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.75rem);font-weight:600;line-height:1.2;letter-spacing:-0.015em}
+.headline-md{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:500;line-height:1.25}
+.headline-sm{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:500;line-height:1.3}
+.label-lg{font-size:0.8125rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase}
+.label-sm{font-size:0.6875rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase}
+.gold-line{height:1px;background:linear-gradient(to right,#C5A880,transparent)}
+.btn-primary{display:inline-flex;align-items:center;gap:.75rem;padding:1rem 2rem;background:var(--secondary-fixed);color:var(--on-secondary-fixed);font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:.25rem;box-shadow:var(--shadow-md);transition:var(--transition)}
+.btn-primary:hover{background:var(--secondary-container);color:var(--on-secondary-container);transform:translateY(-1px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:.75rem;padding:1rem 2rem;background:rgba(255,255,255,.1);color:#fff;font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:.25rem;backdrop-filter:blur(8px);transition:var(--transition)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.card-hover{transition:var(--transition)}
+.card-hover:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;font-size:inherit;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;vertical-align:middle}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.animate-fade-up{animation:fadeInUp .7s ease forwards}
+.animate-pulse{animation:pulse 2s infinite}

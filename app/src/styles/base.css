@@ -1,0 +1,46 @@
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0; padding: 0; line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+
+h1, h2, h3, h4 { line-height: 1.2; margin: 0 0 var(--sp-2) 0; }
+h1 { font-size: clamp(32px, 6vw, 60px); color: var(--hero); }
+
+@media (prefers-color-scheme: dark) {
+  h1 { color: var(--ink); }
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--sp-2); }
+.header { padding: var(--sp-3) 0; border-bottom: 1px solid var(--line); }
+.hero { text-align: center; padding: calc(var(--sp-4) * 1.5) 0 var(--sp-4) 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--sp-3); margin-bottom: var(--sp-4); }
+
+.card { 
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); 
+  padding: var(--sp-3); transition: transform 0.2s, border-color 0.2s; 
+  display: flex; flex-direction: column; 
+}
+.card:hover { transform: translateY(-4px); border-color: var(--ac); }
+.card-title { color: var(--ac); font-size: 20px; margin-bottom: 8px; }
+.card-desc { color: var(--mut); margin-bottom: var(--sp-3); flex-grow: 1; font-size: 15px; }
+
+.btn { 
+  background: var(--ac); color: #fff; border: none; padding: 12px 24px; 
+  border-radius: var(--r-md); font-size: 16px; cursor: pointer; 
+  font-weight: bold; transition: background 0.2s; 
+}
+.btn:hover { background: #0c8c73; }
+.btn-outline { background: transparent; border: 1px solid var(--ac); color: var(--ac); }
+.btn-outline:hover { background: var(--ac); color: #fff; }
+
+.stepper { display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; margin: var(--sp-4) 0; }
+.step { background: var(--card); border: 1px solid var(--line); padding: var(--sp-2) var(--sp-3); border-radius: 30px; font-weight: bold; color: var(--mut); }
+.step.active { border-color: var(--ac); color: var(--ac); background: rgba(14, 159, 131, 0.1); }
+
+.footer { padding: var(--sp-4) 0; border-top: 1px solid var(--line); margin-top: var(--sp-4); font-size: 14px; color: var(--mut); text-align: center; }
+.legal-notice { background: rgba(240, 166, 54, 0.1); border: 1px solid var(--ac2); color: var(--ac2); padding: var(--sp-2); border-radius: var(--r-md); margin-bottom: var(--sp-3); text-align: left; }

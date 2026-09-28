@@ -1,0 +1,18 @@
+/* Extended tokens for Investment Ecosystem */
+:root {
+  /* Sector colors */
+  --sector-realestate: #0e9f83;
+  --sector-energy: #10b981;
+  --sector-finance: #3b82f6;
+  --sector-logistics: #8b5cf6;
+
+  /* Status colors */
+  --status-active: #10b981;
+  --status-upcoming: #f59e0b;
+  --status-closed: #6b7280;
+
+  /* Stage colors */
+  --stage-seed: #f59e0b;
+  --stage-series-a: #3b82f6;
+  --stage-series-b: #8b5cf6;
+}
