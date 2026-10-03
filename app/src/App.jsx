@@ -1,54 +1,59 @@
-﻿import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import CustomCursor from './components/ui/CustomCursor';
+import AIChat from './components/ui/AIChat';
+import CommandPalette from './components/ui/CommandPalette';
+import GlobalNewsletter from './components/ui/GlobalNewsletter';
+
 import Home from './pages/Home';
 import About from './pages/About';
-import Sectors from './pages/Sectors';
-import IR from './pages/IR';
 import Ecosystem from './pages/Ecosystem';
-import Campaigns from './pages/Campaigns';
-import CampaignDetail from './pages/CampaignDetail';
-import Ventures from './pages/Ventures';
-import VentureDetail from './pages/VentureDetail';
-import Mechanisms from './pages/Mechanisms';
-import CaseStudies from './pages/CaseStudies';
+import News from './pages/News';
 import Contact from './pages/Contact';
-import FlowProcess from './pages/FlowProcess';
+import Careers from './pages/Careers';
 
-function ScrollToTop() {
+const ScrollToTop = () => {
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   return null;
-}
+};
 
 export default function App() {
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+    const handleOpenCommandPalette = () => setIsCommandPaletteOpen(true);
+    document.addEventListener('open-command-palette', handleOpenCommandPalette);
+    return () => document.removeEventListener('open-command-palette', handleOpenCommandPalette);
+  }, []);
+
   return (
-    <>
+    <div className={`flex flex-col min-h-screen relative selection:bg-[#2997ff] selection:text-white transition-all duration-700 ${isLightMode ? 'invert hue-rotate-180' : ''}`}>
+      <CustomCursor />
       <ScrollToTop />
-      <Header />
-      <main>
+      <Header 
+        isLightMode={isLightMode}
+        toggleTheme={() => setIsLightMode(!isLightMode)}
+      />
+      <main className="flex-1 w-full mt-[44px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/sectors" element={<Sectors />} />
-          <Route path="/ir" element={<IR />} />
           <Route path="/ecosystem" element={<Ecosystem />} />
-          <Route path="/campaigns" element={<Campaigns />} />
-          <Route path="/campaigns/:slug" element={<CampaignDetail />} />
-          <Route path="/ventures" element={<Ventures />} />
-          <Route path="/ventures/:slug" element={<VentureDetail />} />
-          <Route path="/mechanisms" element={<Mechanisms />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/flow" element={<FlowProcess />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </main>
       <Footer />
-    </>
+
+      {/* Global Overlays */}
+      <GlobalNewsletter />
+      <AIChat />
+      <CommandPalette isOpen={isCommandPaletteOpen} onClose={() => setIsCommandPaletteOpen(false)} />
+    </div>
   );
 }

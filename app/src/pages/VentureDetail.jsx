@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n/useTranslation';
@@ -16,9 +16,9 @@ export default function VentureDetail() {
       <div className="min-h-screen bg-surface flex items-center justify-center">
         <div className="text-center">
           <span className="material-symbols-outlined text-outline text-6xl mb-4 block">error</span>
-          <h2 className="headline text-on-surface text-2xl mb-2">Không tìm thấy dự án</h2>
+          <h2 className="headline text-on-surface text-2xl mb-2">KhÃ´ng tÃ¬m tháº¥y dá»± Ã¡n</h2>
           <Link to="/ventures" className="text-secondary hover:underline">
-            ← Quay lại danh sách
+            â† Quay láº¡i danh sÃ¡ch
           </Link>
         </div>
       </div>
@@ -26,10 +26,10 @@ export default function VentureDetail() {
   }
 
   const tabs = [
-    { id: 'overview', label: 'Tổng quan', icon: 'info' },
-    { id: 'financials', label: 'Tài chính', icon: 'account_balance' },
-    { id: 'team', label: 'Đội ngũ', icon: 'people' },
-    { id: 'milestones', label: 'Cột mốc', icon: 'flag' }
+    { id: 'overview', label: 'Tá»•ng quan', icon: 'info' },
+    { id: 'financials', label: 'TÃ i chÃ­nh', icon: 'account_balance' },
+    { id: 'team', label: 'Äá»™i ngÅ©', icon: 'people' },
+    { id: 'milestones', label: 'Cá»™t má»‘c', icon: 'flag' }
   ];
 
   return (
@@ -92,11 +92,11 @@ export default function VentureDetail() {
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-surface-container p-6 rounded-xl">
-                        <p className="text-sm text-on-surface-variant mb-2">Mục tiêu gọi vốn</p>
+                        <p className="text-sm text-on-surface-variant mb-2">Má»¥c tiÃªu gá»i vá»‘n</p>
                         <p className="text-2xl font-bold text-secondary headline">{venture.fundingGoalFormatted.vi}</p>
                       </div>
                       <div className="bg-surface-container p-6 rounded-xl">
-                        <p className="text-sm text-on-surface-variant mb-2">Đã huy động</p>
+                        <p className="text-sm text-on-surface-variant mb-2">ÄÃ£ huy Ä‘á»™ng</p>
                         <p className="text-2xl font-bold text-on-surface headline">{venture.fundingRaisedFormatted.vi}</p>
                       </div>
                     </div>
@@ -105,12 +105,12 @@ export default function VentureDetail() {
 
                 {activeTab === 'financials' && (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                    <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Thông tin tài chính</h3>
+                    <h3 className="headline text-on-surface text-2xl font-semibold mb-6">ThÃ´ng tin tÃ i chÃ­nh</h3>
                     <div className="bg-surface-container rounded-xl overflow-hidden">
                       <table className="w-full text-left">
                         <thead>
                           <tr className="bg-surface-container-high">
-                            <th className="p-4 text-on-surface-variant">Năm</th>
+                            <th className="p-4 text-on-surface-variant">NÄƒm</th>
                             <th className="p-4 text-on-surface-variant">Doanh thu</th>
                           </tr>
                         </thead>
@@ -129,7 +129,7 @@ export default function VentureDetail() {
 
                 {activeTab === 'team' && (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                    <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Đội ngũ sáng lập</h3>
+                    <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Äá»™i ngÅ© sÃ¡ng láº­p</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       {venture.team.map((member, i) => (
                         <div key={i} className="flex items-center gap-4 bg-surface-container p-4 rounded-xl">
@@ -146,7 +146,7 @@ export default function VentureDetail() {
 
                 {activeTab === 'milestones' && (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                    <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Cột mốc phát triển</h3>
+                    <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Cá»™t má»‘c phÃ¡t triá»ƒn</h3>
                     <div className="space-y-6">
                       {venture.milestones.map((m) => (
                         <div key={m.id} className="flex gap-4">
@@ -171,11 +171,11 @@ export default function VentureDetail() {
             {/* Right Column */}
             <div className="lg:col-span-1">
               <div className="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/10 sticky top-24">
-                <h3 className="headline text-on-surface text-xl font-semibold mb-6">Thông tin dự án</h3>
+                <h3 className="headline text-on-surface text-xl font-semibold mb-6">ThÃ´ng tin dá»± Ã¡n</h3>
                 
                 <div className="space-y-6">
                   <div>
-                    <p className="text-sm text-on-surface-variant mb-2">Tiến độ huy động vốn</p>
+                    <p className="text-sm text-on-surface-variant mb-2">Tiáº¿n Ä‘á»™ huy Ä‘á»™ng vá»‘n</p>
                     <div className="mb-2">
                       <div className="flex justify-between text-sm mb-1">
                         <span className="text-on-surface">{venture.progress}%</span>
@@ -190,7 +190,7 @@ export default function VentureDetail() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-surface-container p-4 rounded-xl text-center">
                       <p className="text-2xl font-bold text-on-surface headline">{venture.investors}</p>
-                      <p className="text-xs text-on-surface-variant">Nhà đầu tư</p>
+                      <p className="text-xs text-on-surface-variant">NhÃ  Ä‘áº§u tÆ°</p>
                     </div>
                     <div className="bg-surface-container p-4 rounded-xl text-center">
                       <p className="text-2xl font-bold text-on-surface headline">{venture.milestones.filter(m => m.status === 'completed').length}</p>
@@ -207,7 +207,7 @@ export default function VentureDetail() {
                     Trang web
                   </a>
                   <button className="w-full py-3 bg-secondary text-on-secondary text-center rounded-xl hover:bg-secondary-container transition-all">
-                    Quan tâm đến dự án
+                    Quan tÃ¢m Ä‘áº¿n dá»± Ã¡n
                   </button>
                 </div>
               </div>

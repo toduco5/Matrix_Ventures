@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+﻿import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Lock, Activity, Globe, ShieldCheck, Cpu, Users, Handshake, BarChart3, Play, Quote } from 'lucide-react';
@@ -374,3 +374,5 @@ export default function Home() {
     </div>
   );
 }
+
+

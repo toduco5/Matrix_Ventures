@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n/useTranslation';
 import { campaigns } from '@/data/campaigns';
@@ -14,7 +14,7 @@ export default function Campaigns() {
   const [viewMode, setViewMode] = useState('grid');
 
   const sectors = [
-    { value: 'all', label: t('common.filter.all') || 'Tất cả' },
+    { value: 'all', label: t('common.filter.all') || 'Táº¥t cáº£' },
     { value: 'realestate', label: t('sectors.realestate') },
     { value: 'energy', label: t('sectors.energy') },
     { value: 'finance', label: t('sectors.finance') },
@@ -22,7 +22,7 @@ export default function Campaigns() {
   ];
 
   const statuses = [
-    { value: 'all', label: t('common.filter.all') || 'Tất cả' },
+    { value: 'all', label: t('common.filter.all') || 'Táº¥t cáº£' },
     { value: 'active', label: t('campaigns.status.active') },
     { value: 'upcoming', label: t('campaigns.status.upcoming') },
     { value: 'closed', label: t('campaigns.status.closed') }
@@ -88,7 +88,7 @@ export default function Campaigns() {
             <SearchBox
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder={t('common.search') || 'Tìm kiếm vòng gọi vốn...'}
+              placeholder={t('common.search') || 'TÃ¬m kiáº¿m vÃ²ng gá»i vá»‘n...'}
             />
             <div className="flex flex-wrap gap-4">
               <select
@@ -110,10 +110,10 @@ export default function Campaigns() {
                 onChange={(e) => setSortBy(e.target.value)}
                 className="px-4 py-2.5 bg-surface-container-lowest border border-outline-variant rounded-lg text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all min-w-[180px]"
               >
-                <option value="newest">{t('campaigns.sort.newest') || 'Mới nhất'}</option>
+                <option value="newest">{t('campaigns.sort.newest') || 'Má»›i nháº¥t'}</option>
                 <option value="endingSoon">{t('campaigns.sort.endingSoon') || 'Sắp kết thúc'}</option>
-                <option value="progress">{t('campaigns.sort.progress') || 'Tiến độ cao'}</option>
-                <option value="pool">{t('campaigns.sort.pool') || 'Quỹ lớn nhất'}</option>
+                <option value="progress">{t('campaigns.sort.progress') || 'Tiáº¿n Ä‘á»™ cao'}</option>
+                <option value="pool">{t('campaigns.sort.pool') || 'Quá»¹ lá»›n nháº¥t'}</option>
               </select>
               <div className="flex items-center gap-2 border border-outline-variant rounded-lg overflow-hidden">
                 <button
@@ -142,8 +142,8 @@ export default function Campaigns() {
           {filteredCampaigns.length === 0 ? (
             <div className="text-center py-20">
               <span className="material-symbols-outlined text-outline text-6xl mb-4 block">search_off</span>
-              <h3 className="headline text-on-surface text-2xl mb-2">{t('campaigns.empty.title') || 'Không tìm thấy vòng gọi vốn'}</h3>
-              <p className="text-on-surface-variant">{t('campaigns.empty.desc') || 'Thử thay đổi bộ lọc hoặc từ khóa tìm kiếm'}</p>
+              <h3 className="headline text-on-surface text-2xl mb-2">{t('campaigns.empty.title') || 'Không tìm thấy vÃ²ng gá»i vá»‘n'}</h3>
+              <p className="text-on-surface-variant">{t('campaigns.empty.desc') || 'Thá»­ thay Ä‘á»•i bá»™ lá»c hoáº·c tá»« khÃ³a tÃ¬m kiáº¿m'}</p>
             </div>
           ) : (
             <motion.div

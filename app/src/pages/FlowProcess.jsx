@@ -22,7 +22,7 @@ export default function FlowProcess() {
         <div className="text-center mb-16">
           <span className="section-tag text-secondary-fixed block mb-3">Quy Trình</span>
           <h1 className="headline text-white text-5xl font-semibold">5 Bước Kết Nối Đầu Tư</h1>
-          <p className="text-on-primary-container text-xl mt-4 max-w-2xl mx-auto">Từ người lạ đến đối tác chiến lược — từng bước minh bạch, chuyên nghiệp</p>
+          <p className="text-on-primary-container text-xl mt-4 max-w-2xl mx-auto">Từ người lạ đến đối tác chiến lược – từng bước minh bạch, chuyên nghiệp</p>
         </div>
 
         {/* Timeline Chart */}

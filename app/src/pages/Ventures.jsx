@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n/useTranslation';
 import { ventures } from '@/data/ventures';
@@ -13,7 +13,7 @@ export default function Ventures() {
   const [selectedStage, setSelectedStage] = useState('all');
 
   const sectors = [
-    { value: 'all', label: 'Tất cả' },
+    { value: 'all', label: 'Táº¥t cáº£' },
     { value: 'realestate', label: t('sectors.realestate') },
     { value: 'energy', label: t('sectors.energy') },
     { value: 'finance', label: t('sectors.finance') },
@@ -21,7 +21,7 @@ export default function Ventures() {
   ];
 
   const stages = [
-    { value: 'all', label: 'Tất cả' },
+    { value: 'all', label: 'Táº¥t cáº£' },
     { value: 'seed', label: 'Seed' },
     { value: 'seriesA', label: 'Series A' },
     { value: 'seriesB', label: 'Series B' },
@@ -77,7 +77,7 @@ export default function Ventures() {
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Tìm kiếm dự án..."
+                placeholder="TÃ¬m kiáº¿m dá»± Ã¡n..."
                 className="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant rounded-lg text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
               />
             </div>
@@ -107,8 +107,8 @@ export default function Ventures() {
           {filteredVentures.length === 0 ? (
             <div className="text-center py-20">
               <span className="material-symbols-outlined text-outline text-6xl mb-4 block">search_off</span>
-              <h3 className="headline text-on-surface text-2xl mb-2">Không tìm thấy dự án</h3>
-              <p className="text-on-surface-variant">Thử thay đổi bộ lọc hoặc từ khóa tìm kiếm</p>
+              <h3 className="headline text-on-surface text-2xl mb-2">KhÃ´ng tÃ¬m tháº¥y dá»± Ã¡n</h3>
+              <p className="text-on-surface-variant">Thá»­ thay Ä‘á»•i bá»™ lá»c hoáº·c tá»« khÃ³a tÃ¬m kiáº¿m</p>
             </div>
           ) : (
             <motion.div
@@ -151,7 +151,7 @@ export default function Ventures() {
                         <ProgressBar progress={venture.progress} height="h-2" color="bg-secondary" />
                         <div className="flex justify-between text-xs text-on-surface-variant mt-2">
                           <span>{venture.fundingRaisedFormatted.vi}</span>
-                          <span>{venture.investors} nhà đầu tư</span>
+                          <span>{venture.investors} nhÃ  Ä‘áº§u tÆ°</span>
                         </div>
                       </div>
                     </div>

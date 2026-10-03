@@ -88,8 +88,8 @@ export default function CaseStudies() {
           {filteredCaseStudies.length === 0 ? (
             <div className="text-center py-20">
               <span className="material-symbols-outlined text-outline text-6xl mb-4 block">search_off</span>
-              <h3 className="headline text-on-surface text-2xl mb-2">Không tìm thấy câu chuyện</h3>
-              <p className="text-on-surface-variant">Thử thay đổi bộ lọc</p>
+              <h3 className="headline text-on-surface text-2xl mb-2">Không tìm thấy cÃ¢u chuyá»‡n</h3>
+              <p className="text-on-surface-variant">Thá»­ thay Ä‘á»•i bá»™ lá»c</p>
             </div>
           ) : (
             <motion.div

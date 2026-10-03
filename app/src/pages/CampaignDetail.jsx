@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n/useTranslation';
@@ -21,9 +21,9 @@ export default function CampaignDetail() {
       <div className="min-h-screen bg-surface flex items-center justify-center">
         <div className="text-center">
           <span className="material-symbols-outlined text-outline text-6xl mb-4 block">error</span>
-          <h2 className="headline text-on-surface text-2xl mb-2">Không tìm thấy vòng gọi vốn</h2>
+          <h2 className="headline text-on-surface text-2xl mb-2">KhÃ´ng tÃ¬m tháº¥y vÃ²ng gá»i vá»‘n</h2>
           <Link to="/campaigns" className="text-secondary hover:underline">
-            ← Quay lại danh sách
+            â† Quay láº¡i danh sÃ¡ch
           </Link>
         </div>
       </div>
@@ -31,9 +31,9 @@ export default function CampaignDetail() {
   }
 
   const tabs = [
-    { id: 'overview', label: 'Tổng quan', icon: 'info' },
-    { id: 'projects', label: 'Dự án tham gia', icon: 'campaign' },
-    { id: 'timeline', label: 'Lịch trình', icon: 'timeline' }
+    { id: 'overview', label: 'Tá»•ng quan', icon: 'info' },
+    { id: 'projects', label: 'Dá»± Ã¡n tham gia', icon: 'campaign' },
+    { id: 'timeline', label: 'Lá»‹ch trÃ¬nh', icon: 'timeline' }
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function CampaignDetail() {
               <SectorTag sector={campaign.sector} label={t(`sectors.${campaign.sector}`)} />
               <StatusBadge
                 status={campaign.status}
-                statusLabel={{ active: 'Đang mở', upcoming: 'Sắp mở', closed: 'Đã đóng' }[campaign.status]}
+                statusLabel={{ active: 'Äang má»Ÿ', upcoming: 'Sáº¯p má»Ÿ', closed: 'ÄÃ£ Ä‘Ã³ng' }[campaign.status]}
               />
             </div>
             <h1 className="headline text-white text-4xl lg:text-5xl font-semibold mb-4">
@@ -94,7 +94,7 @@ export default function CampaignDetail() {
                   className="space-y-8"
                 >
                   <div>
-                    <h3 className="headline text-on-surface text-2xl font-semibold mb-4">Giới thiệu</h3>
+                    <h3 className="headline text-on-surface text-2xl font-semibold mb-4">Giá»›i thiá»‡u</h3>
                     <p className="text-on-surface-variant leading-relaxed text-lg">
                       {campaign.description.vi}
                     </p>
@@ -102,7 +102,7 @@ export default function CampaignDetail() {
 
                   {campaign.highlights && campaign.highlights.vi && (
                     <div>
-                      <h4 className="font-semibold text-on-surface mb-3">Điểm nổi bật</h4>
+                      <h4 className="font-semibold text-on-surface mb-3">Äiá»ƒm ná»•i báº­t</h4>
                       <ul className="space-y-2">
                         {campaign.highlights.vi.map((item, i) => (
                           <li key={i} className="flex items-center gap-2 text-on-surface-variant">
@@ -122,10 +122,10 @@ export default function CampaignDetail() {
                   animate={{ opacity: 1, y: 0 }}
                 >
                   <h3 className="headline text-on-surface text-2xl font-semibold mb-6">
-                    Dự án tham gia ({campaignVentures.length})
+                    Dá»± Ã¡n tham gia ({campaignVentures.length})
                   </h3>
                   {campaignVentures.length === 0 ? (
-                    <p className="text-on-surface-variant">Chưa có dự án tham gia.</p>
+                    <p className="text-on-surface-variant">ChÆ°a cÃ³ dá»± Ã¡n tham gia.</p>
                   ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {campaignVentures.map(venture => (
@@ -143,7 +143,7 @@ export default function CampaignDetail() {
                             <ProgressBar progress={venture.progress} height="h-2" />
                             <div className="flex justify-between text-xs text-on-surface-variant mt-2">
                               <span>{venture.fundingRaisedFormatted.vi}</span>
-                              <span>{venture.investors} nhà đầu tư</span>
+                              <span>{venture.investors} nhÃ  Ä‘áº§u tÆ°</span>
                             </div>
                           </div>
                         </Link>
@@ -158,14 +158,14 @@ export default function CampaignDetail() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                 >
-                  <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Lịch trình vòng gọi vốn</h3>
+                  <h3 className="headline text-on-surface text-2xl font-semibold mb-6">Lá»‹ch trÃ¬nh vÃ²ng gá»i vá»‘n</h3>
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
                         <span className="material-symbols-outlined text-secondary">event</span>
                       </div>
                       <div>
-                        <p className="font-semibold text-on-surface">Khởi động vòng gọi vốn</p>
+                        <p className="font-semibold text-on-surface">Khá»Ÿi Ä‘á»™ng vÃ²ng gá»i vá»‘n</p>
                         <p className="text-on-surface-variant">{new Date(campaign.startDate).toLocaleDateString('vi-VN')}</p>
                       </div>
                     </div>
@@ -174,7 +174,7 @@ export default function CampaignDetail() {
                         <span className="material-symbols-outlined text-secondary">flag</span>
                       </div>
                       <div>
-                        <p className="font-semibold text-on-surface">Kết thúc vòng gọi vốn</p>
+                        <p className="font-semibold text-on-surface">Káº¿t thÃºc vÃ²ng gá»i vá»‘n</p>
                         <p className="text-on-surface-variant">{new Date(campaign.endDate).toLocaleDateString('vi-VN')}</p>
                       </div>
                     </div>
@@ -186,18 +186,18 @@ export default function CampaignDetail() {
             {/* Right Column - Sidebar */}
             <div className="lg:col-span-1">
               <div className="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/10 sticky top-24">
-                <h3 className="headline text-on-surface text-xl font-semibold mb-6">Thông tin vòng gọi vốn</h3>
+                <h3 className="headline text-on-surface text-xl font-semibold mb-6">ThÃ´ng tin vÃ²ng gá»i vá»‘n</h3>
                 
                 <div className="space-y-6">
                   <div>
-                    <p className="text-sm text-on-surface-variant mb-2">Quỹ đối ứng cộng đồng</p>
+                    <p className="text-sm text-on-surface-variant mb-2">Quá»¹ Ä‘á»‘i á»©ng cá»™ng Ä‘á»“ng</p>
                     <p className="text-3xl font-bold text-secondary headline">
                       {campaign.matchingPoolFormatted.vi}
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-sm text-on-surface-variant mb-2">Tiến độ huy động</p>
+                    <p className="text-sm text-on-surface-variant mb-2">Tiáº¿n Ä‘á»™ huy Ä‘á»™ng</p>
                     <ProgressBar progress={campaign.progress} height="h-4" color="bg-secondary" />
                     <div className="flex justify-between text-sm mt-2">
                       <span className="text-on-surface-variant">{campaign.raisedAmountFormatted.vi}</span>
@@ -208,13 +208,13 @@ export default function CampaignDetail() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-surface-container p-4 rounded-xl text-center">
                       <p className="text-2xl font-bold text-on-surface headline">{campaign.projectCount}</p>
-                      <p className="text-xs text-on-surface-variant">Dự án</p>
+                      <p className="text-xs text-on-surface-variant">Dá»± Ã¡n</p>
                     </div>
                     <div className="bg-surface-container p-4 rounded-xl text-center">
                       <p className="text-2xl font-bold text-on-surface headline">
                         {Math.ceil((new Date(campaign.endDate) - new Date()) / (1000 * 60 * 60 * 24))}
                       </p>
-                      <p className="text-xs text-on-surface-variant">Ngày còn lại</p>
+                      <p className="text-xs text-on-surface-variant">NgÃ y cÃ²n láº¡i</p>
                     </div>
                   </div>
 

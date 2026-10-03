@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n/useTranslation';
 import { mechanisms } from '@/data/mechanisms';
@@ -9,18 +9,18 @@ export default function Mechanisms() {
   const [selectedDifficulty, setSelectedDifficulty] = useState('all');
 
   const categories = [
-    { value: 'all', label: 'Tất cả' },
-    { value: 'public-goods', label: 'Hàng Công Cộng' },
-    { value: 'traditional', label: 'Truyền Thống' },
-    { value: 'hybrid', label: 'Kết Hợp' },
-    { value: 'governance', label: 'Quản Trị' }
+    { value: 'all', label: 'T\u1ea5t c\u1ea3' },
+    { value: 'public-goods', label: 'HÃƒÂ ng CÃƒÂ´ng CÃ¡Â»â„¢ng' },
+    { value: 'traditional', label: 'TruyÃ¡Â»Ân ThÃ¡Â»â€˜ng' },
+    { value: 'hybrid', label: 'K\u1ebft H\u1ee3p' },
+    { value: 'governance', label: 'QuÃ¡ÂºÂ£n TrÃ¡Â»â€¹' }
   ];
 
   const difficulties = [
-    { value: 'all', label: 'Tất cả' },
-    { value: 'beginner', label: 'Cơ bản' },
-    { value: 'intermediate', label: 'Trung cấp' },
-    { value: 'advanced', label: 'Nâng cao' }
+    { value: 'all', label: 'Táº¥t cáº£' },
+    { value: 'beginner', label: 'CÆ¡ báº£n' },
+    { value: 'intermediate', label: 'Trung cáº¥p' },
+    { value: 'advanced', label: 'NÃ¢ng cao' }
   ];
 
   const filteredMechanisms = useMemo(() => {
