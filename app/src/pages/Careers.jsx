@@ -144,7 +144,7 @@ export default function Careers() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.8 }}
                 className="text-[24px] md:text-[32px] font-bold tracking-tighter"
-                style={{ fontFamily: i % 2 === 0 ? 'sans-serif' : 'serif', fontStyle: i === 2 ? 'italic' : 'normal' }}
+                style={{ fontFamily: 'Be Vietnam Pro, sans-serif', fontStyle: i === 2 ? 'italic' : 'normal' }}
               >
                 {company}
               </motion.div>

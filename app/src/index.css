@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -32,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary-dark);
   background-color: var(--bg-black);
   
@@ -65,13 +64,13 @@ body {
 
 /* Typography */
 .headline {
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Be Vietnam Pro', -apple-system, sans-serif;
   letter-spacing: -0.015em;
   font-weight: 600;
 }
 
 .headline-massive {
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Be Vietnam Pro', -apple-system, sans-serif;
   letter-spacing: -0.03em;
   font-weight: 700;
 }

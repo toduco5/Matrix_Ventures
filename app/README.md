@@ -49,3 +49,8 @@ npm run lint     # oxlint
 - Header: Nút "Liên Hệ" màu vàng duy nhất (link `/contact`)
 - Logo: `/logo-mark.png`
 - Build: Thành công, 0 lỗi lint, 0 lỗi build
+
+note : giamr bot hieu ung chuyen  dong; 
+mo phong loi nhuan; tich hop vao noi dung chi tiet cua cac du an;
+bỏ bớt logo 
+cỉnh lại phần footer
